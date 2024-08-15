@@ -70,18 +70,18 @@ const RegisterPage = ()=> {
                   required
                   value={formData.confirmPassword}
                     onChange={handleChange}
-        />
-         <input id="image" type="file"
-         name="profileImage"
-         accept="image/*"
-          className='hidden'  
-          required
-          onChange={handleChange}
-         />
-        <label htmlFor='image'
-        className='flex  item-center gap-3 mt-2 mb-2'>
-           {formData.profileImage ? (
-            <img src={URL.createObjectURL(formData.profileImage)}
+            />
+             <input id="image" type="file"
+              name="profileImage"
+              accept="image/*"
+              className='hidden'  
+              required
+              onChange={handleChange}
+              />
+            <label htmlFor='image'
+             className='flex  item-center gap-3 mt-2 mb-2'>
+               {formData.profileImage ? (
+                <img src={URL.createObjectURL(formData.profileImage)}
                 alt="profile photo" style={{ maxWidth:"80px" }}
             />
             ):(
